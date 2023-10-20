@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEON GUZMAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">León F. Guzmán Lizardo</div>
+        <div>
+            <ul class="nav-links">
+                <list><a href="#home">Home</a></list>
+                <list><a href="#research">Research</a></list>
+                <list><a href="#contact">Contact</a></list>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">León F. Guzmán Lizardo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div class="menu-links">
+        <list><a href="#home" onclick="togglemenu()">Home</a></list>
+        <list><a href="#research" onclick="togglemenu()">Research</a></list>
+        <list><a href="#contact" onclick="togglemenu()">Contact</a></list>
+
+        </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="section__pic-container">
+            <img src="./profile-pic.png" alt="Leon Guzman Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p2">I am a PhD candidate in Economics at New York University.</p>
+            <p class="section__text__p2">I am a microeconomist focused in the empirical study of higher education markets.</p>
+            <p class="section__text__p2">In my Job Market Paper, I use applied microeconometrics techniques for the study of matching effects in the learning production function of higher education settings.
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+        </div>
+    </section>
+    <section id="research">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Research</h1>
+        <div class="section-container">
+            <div class="research-detail-container">
+                <div class="research-containers">
+                    <div class="details-container">
+                        <h3 class="mb-0">
+                            <a href="./Dissertation_Folder-26.pdf" target="_blank">
+                                Matching Students and Professors in Higher Ed. (Job Market Paper)
+                        </h3>
+                        <p style="margin: 0;"></p>
+                        <div class="topnav">
+                            <a href="#abstract" onclick="toggle_visibility('foo_fl');">Abstract</a>
+                        </div>
+                        <P></P>
+                        <P></P>
+                    
+                            <div id="foo_fl" style="display: none; text-align: justify;">
+                            <p>
+                            This study investigates the impact of organizational decisions in higher education, specifically focusing on the construction of student-professor assignments and their influence on learning outcomes. Higher education institutions typically rely on course enrollment mechanisms based on student choice. As students' choices reflect not only preferences for learning but also the desire for high scores, the resulting assignments may be suboptimal from a learning perspective. To address this issue, we examine the implementation of policies aimed at resolving this problem. We construct a structural model describing the academic path followed by a student through a sequence of mandatory courses in a higher education institution, estimate the model's key parameters, and utilize these estimates to assess two counterfactual policies. The first set of policies explores dictatorial reassignments of students to professors, which don't consider student preferences in the construction of the matches. The second set of policy counterfactuals seeks to affect the student-professor assignment by changing the rules behind the course-enrollment mechanism mediating students' demands for sections within a course. In both scenarios, substantial improvements in learning outcomes are suggested, as evidenced by average student scores, section dropout rates, and the number of course retakes required to achieve a passing grade.
+                            </p>
+                            </div> 
+                        
+                    </div>
+
+                    <div class="details-container">
+                        <h3 class="mb-0">
+                            <a href="./BFG (11 October 2023).pdf" target="_blank">
+                                Ramsey Pricing Revisited: Natural Monopoly Regulation with Evaders with Martín Besfamille and Nicolás Figueroa
+                        </h3>
+                        <p style="margin: 0;"></p>
+                        <div class="topnav">
+                            <a href="#abstract" onclick="toggle_visibility('foo_fl2');">Abstract</a>
+                        </div>
+                        <P></P>
+                        <P></P>
+                    
+                            <div id="foo_fl2" style="display: none; text-align: justify;">
+                            <p>
+                                We consider a model featuring a single-product natural monopoly, which faces evaders, i.e., individuals that may not pay the price. By exerting a costly effort, the firm can deter evasion. To maximize the total surplus, a regulator sets the price, the level of deterrence effort, and socially costly transfers to ensure the monopoly's participation. We obtain a modified Ramsey formula, which clearly shows that the mere existence of evaders dampens the use of the price as a mean to finance the firm's deficit. In fact, we find sufficient conditions ensuring the regulated price be lower than the marginal cost, for any level of the deadweight loss of taxation.  Then, we generalize the model to incorporate moral hazard. Finally, we undertake an empirical application of our results, which shows quantitatively that the downward tendency of regulated prices in a context on high evasion is significant.  
+                            </p>
+                            </div> 
+                    </div>
+
+                 </div>
+                 
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:lgl266@nyu.edu">lgl266@nyu.edu</p>
+            </div>
+            
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <list><a href="#home">Home</a></list>
+                    <list><a href="#research">Research</a></list>
+                    <list><a href="#contact">Contact</a></list>
+                </ul> 
+
+            </div>
+        </nav>
+        
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function toggle_visibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+  
+</html>
