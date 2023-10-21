@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">León F. Guzmán Lizardo</div>
-        <div>
-            <ul class="nav-links">
-                <list><a href="#home">Home</a></list>
-                <list><a href="#research">Research</a></list>
-                <list><a href="#contact">Contact</a></list>
-            </ul>
+    <div class="nav-frame">
+        <div class="frame-content">
+            <nav id="desktop-nav">
+                <div class="logo">León F. Guzmán Lizardo</div>
+                <div>
+                    <ul class="nav-links">
+                        <list><a href="#home">Home</a></list>
+                        <list><a href="#research">Research</a></list>
+                        <list><a href="#contact">Contact</a></list>
+                    </ul>
+                </div>
+            </nav>
+            
         </div>
-    </nav>
+    </div>
+    
     <nav id="hamburger-nav">
         <div class="logo">León F. Guzmán Lizardo</div>
         <div class="hamburger-menu">
@@ -34,15 +40,44 @@
         </div>
         </div>
     </nav>
-    <section id="home">
+
+     <section id="home">
         <div class="section__pic-container">
             <img src="./profile-pic.png" alt="Leon Guzman Profile Picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p2">I am a PhD candidate in Economics at New York University.</p>
-            <p class="section__text__p2">I am a microeconomist focused in the empirical study of higher education markets.</p>
-            <p class="section__text__p2">In my Job Market Paper, I use applied microeconometrics techniques for the study of matching effects in the learning production function of higher education settings.
+            <h3>I am a PhD candidate in Economics at New York University.</h3>
+            <p>I am a microeconomist focused in the empirical study of higher education markets.</p>
+            <p>In my <a href="./Dissertation_Folder-26.pdf">Job Market Paper</a>, I examine how higher education institutions' learning outcomes are influenced by the assignment of students to professors, and the role played by commonly used course-enrollment mechanisms in shaping the observed matching.
             </p>
+            <div class="col2">
+                <div class="category">
+                    <strong>Research Interests</strong>
+                    <ul>
+                        <li>Applied Microeconomics</li>
+                        <li>Applied Microeconometrics</li>
+                        <li>Applied Theory</li>
+                        <li>Industrial Organization</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <strong>References</strong>
+                    <ul>
+                        <li>
+                            <a href="http://alfredgalichon.com/">Alfred Galichon</a>
+                        </li>
+                        <li>
+                            <a href="https://sites.google.com/view/qvuong/home">Quang Vuong</a>
+                        </li>
+                        <li>
+                            <a href="https://sites.google.com/view/danielwaldinger">Daniel Waldinger</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./resume-example.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
@@ -57,8 +92,10 @@
                 <div class="research-containers">
                     <div class="details-container">
                         <h3 class="mb-0">
-                            <a href="./Dissertation_Folder-26.pdf" target="_blank">
-                                Matching Students and Professors in Higher Ed. (Job Market Paper)
+                            <p>
+                            Matching Students and Professors in Higher Ed. <a href="./Dissertation_Folder-26.pdf" target="_blank">
+                                 (Job Market Paper)</a>
+                            </p>
                         </h3>
                         <p style="margin: 0;"></p>
                         <div class="topnav">
@@ -69,7 +106,7 @@
                     
                             <div id="foo_fl" style="display: none; text-align: justify;">
                             <p>
-                            This study investigates the impact of organizational decisions in higher education, specifically focusing on the construction of student-professor assignments and their influence on learning outcomes. Higher education institutions typically rely on course enrollment mechanisms based on student choice. As students' choices reflect not only preferences for learning but also the desire for high scores, the resulting assignments may be suboptimal from a learning perspective. To address this issue, we examine the implementation of policies aimed at resolving this problem. We construct a structural model describing the academic path followed by a student through a sequence of mandatory courses in a higher education institution, estimate the model's key parameters, and utilize these estimates to assess two counterfactual policies. The first set of policies explores dictatorial reassignments of students to professors, which don't consider student preferences in the construction of the matches. The second set of policy counterfactuals seeks to affect the student-professor assignment by changing the rules behind the course-enrollment mechanism mediating students' demands for sections within a course. In both scenarios, substantial improvements in learning outcomes are suggested, as evidenced by average student scores, section dropout rates, and the number of course retakes required to achieve a passing grade.
+                            The assignment of students to professors in higher education settings typically relies on course-enrollment mechanisms based on student choice. Since students' preferences for sections within a course are likely to reflect not only a concern for learning but also a preference for high scores, the resulting assignments may be suboptimal from a learning perspective. I study the implementation of policies aimed at improving learning outcomes by modifying the observed assignment. To achieve this, I estimate a structural model describing the academic path followed by a student through a sequence of mandatory courses in a higher education institution. These estimates are used to evaluate two counterfactual policies. The first set explores dictatorial reassignments of students to professors that do not take into account student preferences in the construction of the matches. The second set of policy counterfactuals aims to influence the student-professor assignment by changing the rules governing the course-enrollment mechanism that mediates students' demands for sections within a course. Substantial improvements in learning outcomes are suggested, as evidenced by average student scores, section dropout rates, and the number of course retakes required for the successful completion of the courses.
                             </p>
                             </div> 
                         
@@ -77,8 +114,9 @@
 
                     <div class="details-container">
                         <h3 class="mb-0">
+                            <p>
                             <a href="./BFG (11 October 2023).pdf" target="_blank">
-                                Ramsey Pricing Revisited: Natural Monopoly Regulation with Evaders with Martín Besfamille and Nicolás Figueroa
+                                Ramsey Pricing Revisited: Natural Monopoly Regulation with Evaders</a> with Martín Besfamille and Nicolás Figueroa</p>
                         </h3>
                         <p style="margin: 0;"></p>
                         <div class="topnav">
