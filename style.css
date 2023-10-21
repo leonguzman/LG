@@ -59,7 +59,7 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .logo:hover{
@@ -146,6 +146,13 @@ a:hover {
     transform: none;
  }
 
+ .nav-frame {
+    border: 1px solid #000; /* Add a border to create the frame effect */
+    background-color: #4A90A8; /* Set a cadet blue (Cadet Blue 5) background color for the frame */
+    padding: 10px; /* Add padding to create space within the frame */
+}
+
+
  /*SECTIONS*/
 
  section {
@@ -178,7 +185,7 @@ a:hover {
 
  .section__text {
     align-self: center;
-    text-align: center;
+    text-align: justify;
  }
 
  .section__text p {
@@ -215,7 +222,7 @@ a:hover {
 
  /*BUTTONS*/
 
- .btn-container {
+.btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -257,6 +264,36 @@ a:hover {
  .btn-container {
     gap: 1rem;
  }
+
+ .col2 {
+    column-count: 2;
+    column-gap: 0px;
+    text-align: justify;
+}
+
+.col2 ul {
+    padding: 0;
+    list-style: none; /* Remove default bullets */
+}
+
+.col2 ul li {
+    margin: 0;
+    padding-left: 15px; /* Add left padding to list items */
+    position: relative;
+}
+
+.col2 ul li::before {
+    
+    position: absolute;
+    left: 0;
+    margin-left: -20px; /* Adjust the margin to align bullets with titles */
+}
+
+.category {
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+
  
 /*RESEARCH SECTION*/
 
@@ -340,8 +377,11 @@ a:hover {
 /*FOOTER SECTION*/
 
 footer {
+    display: flex;
+    justify-content: center;
     height: 26vh;
     margin: 0 1rem;
+    align-items: center;
 }
 
 footer p {
