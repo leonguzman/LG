@@ -42,7 +42,7 @@ nav {
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 a {
@@ -142,7 +142,7 @@ a:hover {
 
  .nav-frame {
     border: 1px solid #000; /* Add a border to create the frame effect */
-    background-color: #4A90A8; /* Set a cadet blue (Cadet Blue 5) background color for the frame */
+    background-color: #808080; /* Set a cadet blue (Cadet Blue 5) background color for the frame */
     padding: 10px; /* Add padding to create space within the frame */
 }
 
